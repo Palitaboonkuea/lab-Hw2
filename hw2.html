@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function check(){
+                var ipname = document.getElementById("name");
+                ipname.className="input";
+                var ipage = document.getElementById("age");
+                ipage.className="input";
+                var bdate = document.getElementById("birthdate");
+                bdate.className="input";
+            }
+        </script>
+         <style>
+            .input:not(:focus)
+            {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+           Name :  <input type="text" id="name" value="" onfocus="check()"><br>
+            Age : <input type="text" id="age" value="" onfocus="check()"><br>
+           Birthdate :  <input type="text" id="birthdate" value="" onfocus="check()">
+           
+        </form>
+    </body>
+</html>
